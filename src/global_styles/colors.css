@@ -1,0 +1,249 @@
+:root {
+  /* Primary Colors - Sophisticated Teal */
+  --primary-50: #f0fdfa;
+  --primary-100: #ccfbf1;
+  --primary-200: #99f6e4;
+  --primary-300: #5eead4;
+  --primary-400: #2dd4bf;
+  --primary-500: #14b8a6;
+  --primary-600: #0d9488;
+  --primary-700: #0f766e;
+  --primary-800: #115e59;
+  --primary-900: #134e4a;
+
+  /* Neutral Colors - Soft Gray with Metallic Tones */
+  --neutral-50: #fafdfc;
+  --neutral-100: #f1f5f4;
+  --neutral-200: #e4e9e8;
+  --neutral-300: #d1d9d8;
+  --neutral-400: #a3b2b0;
+  --neutral-500: #72807e;
+  --neutral-600: #515c5a;
+  --neutral-700: #3a4342;
+  --neutral-800: #252c2b;
+  --neutral-900: #171c1b;
+
+  /* Semantic Colors - Muted and Sophisticated */
+  --success-50: #f0fdf4;
+  --success-100: #dcfce7;
+  --success-200: #bbf7d0;
+  --success-300: #86efac;
+  --success-400: #4ade80;
+  --success-500: #22c55e;
+  --success-600: #16a34a;
+  --success-700: #15803d;
+  --success-800: #166534;
+  --success-900: #14532d;
+
+  --warning-50: #fffbeb;
+  --warning-100: #fef3c7;
+  --warning-200: #fde68a;
+  --warning-300: #fcd34d;
+  --warning-400: #fbbf24;
+  --warning-500: #f59e0b;
+  --warning-600: #d97706;
+  --warning-700: #b45309;
+  --warning-800: #92400e;
+  --warning-900: #78350f;
+
+  --error-50: #fef2f2;
+  --error-100: #fee2e2;
+  --error-200: #fecaca;
+  --error-300: #fca5a5;
+  --error-400: #f87171;
+  --error-500: #ef4444;
+  --error-600: #dc2626;
+  --error-700: #b91c1c;
+  --error-800: #991b1b;
+  --error-900: #7f1d1d;
+
+  /* Metallic Background Colors - Light Theme */
+  --bg-primary: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  --bg-secondary: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  --bg-tertiary: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+
+  /* Solid fallbacks for backgrounds */
+  --bg-primary-solid: #f8fafc;
+  --bg-secondary-solid: #f1f5f9;
+  --bg-tertiary-solid: #e2e8f0;
+
+  /* Text Colors - Better Contrast */
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+  --text-inverse: #ffffff;
+
+  /* Border Colors - Subtle Metallic */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-heavy: #a0aec0;
+
+  /* Metallic Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+
+  /* Legacy variables for compatibility */
+  --primary-color: var(--primary-600);
+  --secondary-color: var(--neutral-600);
+  --success-color: var(--success-600);
+  --danger-color: var(--error-600);
+  --light-bg: var(--bg-secondary-solid);
+  --dark-bg: #1a202c;
+  --text-color: var(--text-primary);
+}
+
+/* Dark Theme - Sophisticated Dark Metallic */
+[data-theme='dark'] {
+  /* Dark Metallic Background Colors */
+  --bg-primary: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  --bg-secondary: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  --bg-tertiary: linear-gradient(135deg, #4a5568 0%, #718096 100%);
+
+  /* Solid fallbacks for dark backgrounds */
+  --bg-primary-solid: #1a202c;
+  --bg-secondary-solid: #2d3748;
+  --bg-tertiary-solid: #4a5568;
+
+  /* Text Colors - Softer on Dark */
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --text-tertiary: #cbd5e1;
+  --text-inverse: #1a202c;
+
+  /* Border Colors - Dark Metallic */
+  --border-light: #4a5568;
+  --border-medium: #718096;
+  --border-heavy: #a0aec0;
+
+  /* Dark Metallic Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+
+  /* Update legacy variables for dark mode */
+  --light-bg: var(--bg-secondary-solid);
+  --dark-bg: var(--bg-primary-solid);
+  --text-color: var(--text-primary);
+}
+
+/* Enhanced Utility Classes with Metallic Support */
+.text-primary {
+  color: var(--primary-600);
+}
+
+.text-secondary {
+  color: var(--neutral-600);
+}
+
+.text-success {
+  color: var(--success-600);
+}
+
+.text-warning {
+  color: var(--warning-600);
+}
+
+.text-error {
+  color: var(--error-600);
+}
+
+.bg-primary {
+  background: var(--primary-600);
+}
+
+.bg-secondary {
+  background: var(--neutral-600);
+}
+
+/* Metallic Background Utilities */
+.bg-light {
+  background: var(--bg-secondary);
+}
+
+.bg-dark {
+  background: var(--bg-primary);
+}
+
+.bg-surface-1 {
+  background: var(--bg-primary);
+  background-color: var(--bg-primary-solid);
+}
+
+.bg-surface-2 {
+  background: var(--bg-secondary);
+  background-color: var(--bg-secondary-solid);
+}
+
+.bg-surface-3 {
+  background: var(--bg-tertiary);
+  background-color: var(--bg-tertiary-solid);
+}
+
+/* Solid background utilities (for fallback) */
+.bg-solid-1 {
+  background-color: var(--bg-primary-solid);
+}
+
+.bg-solid-2 {
+  background-color: var(--bg-secondary-solid);
+}
+
+.bg-solid-3 {
+  background-color: var(--bg-tertiary-solid);
+}
+
+.border-light {
+  border-color: var(--border-light);
+}
+
+.border-medium {
+  border-color: var(--border-medium);
+}
+
+.border-heavy {
+  border-color: var(--border-heavy);
+}
+
+/* Enhanced Shadow Utilities */
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Metallic Border Effects */
+.metallic-border {
+  border: 1px solid var(--border-light);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Body with metallic background */
+body {
+  background: var(--bg-primary);
+  background-color: var(--bg-primary-solid);
+  min-height: 100vh;
+}
